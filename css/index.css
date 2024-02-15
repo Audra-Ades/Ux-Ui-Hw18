@@ -3,7 +3,7 @@
     #fff8e0;
     display:flex;
     justify-content: space-around;
-    margin: 50px;
+    
 
 }
 
@@ -22,11 +22,12 @@ ul{
     flex-wrap: wrap;
     color:black;
     margin: 50px;
+    padding-bottom: 25px;   
   
 }
 
  ul a:hover{
-    color:red;
+    color:#dd5444;
     cursor: pointer;
  } 
  
@@ -39,15 +40,15 @@ ul{
     border-radius: 10px;
     background-color: #fff8e0;
     font-size: 25px;
-    justify-content: space-around;
-    margin-bottom: 30px;
+    margin-top: 0px;
+
    
   }
   
   
   .styled:hover {
-    color: rgba(255, 0, 0, 1);
-    border-color: red;
+    color: #dd5444;
+    border-color: #dd5444;
     cursor: pointer;
   }
 
@@ -62,7 +63,7 @@ ul{
     margin-top: 50px;
 }
 footer a:hover{
-    color:red;
+    color:#dd5444;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -76,10 +77,12 @@ align-items: center;
 .myskills{
     display:flex;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    font-size: 100px;
-    font-family: Impact; 
+    font-size: 150px;
+    font-family: nikeflix outline; 
+    color: #dd5444;
+    z-index: 6;
+   margin: 0;
+
    
 
 }
@@ -91,14 +94,18 @@ align-items: center;
     align-content: center;
     font-family: old london alternate;
     margin:auto;
+    padding-right: 50px;
+  
 }
 .skillp{
     font-size: 20px;
-    display: flex;
-    align-content: center;
+   text-align: left;
+    align-content: left;
     font-family: Din condensed;
-    width:70%;
+    width:80%;
     margin:auto;
+    padding: 5px;
+   
 }
 .skill2{
     font-size: 30px;
@@ -109,7 +116,8 @@ align-items: center;
     align-content: right;
     text-align: right;
     justify-self: right;
-    padding: 40px;
+    padding-left: 50px;
+   
 
 }
 .skillp2{
@@ -118,14 +126,15 @@ align-items: center;
     align-items: center;
     font-family: Din condensed;
     width:90%; 
-    padding: 30px; 
+    padding: 5px; 
+   
     
 
 }
 
 
 .skillblurb{
-    display:flex;
+   
     justify-content: center;
     font-size: 60px;
     font-family: Old london alternate; 
@@ -136,3 +145,110 @@ align-items: center;
 #stair2{
     align-items: center;
 }
+
+.row{
+   display: flex;
+   bottom: 50px;
+  padding-inline: 15px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+ 
+  position: relative;
+  top: 30px;
+  bottom: 10px;
+}
+.point1{
+   padding-top: 35px;
+   margin: 0;
+}
+
+.link{
+    text-decoration: none;
+   color: black;
+}
+.row a:hover{
+    color:#dd5444;
+    cursor: pointer;
+     } 
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color:#dd5444;
+    color: #fff8e0;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-family: Din condensed;
+    font-size: 20px;
+    padding: 15px;
+
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .copy{
+    font-family: Din condensed;
+    font-size: 15px;
+    background-color: #fbf4dc;
+    border-radius: 5px;
+    border:#dd5444 solid;
+    color: #dd5444;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .red{
+  
+    width:10%;
+    align-items: left;
+   position: relative;
+   }
+
+  .red2{
+  display: flex;
+  width:10%;
+  right: 10;
+  margin: 0;
+ }

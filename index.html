@@ -3,31 +3,65 @@
     
 <head> 
   <link href="css/index.css" type="text/css" rel="stylesheet">
+ 
 </head>
 <body style="background-color:#fff8e0; border:black solid 5px; ">
+  <script src="js/script.js"></script>
 <h1 class="name">
    <div style="text-align: center;" >
   <img width= 80%; 
-  src="images /v1.png">
+  src="images/newsheading.gif">
 </h1>
 
-<ul>
-    <a >About</a>
-    <a >Skills</a>
-    <a >Work</a>
-    <a >Contact</a>
+<ul >
+    <a class="link" href="https://audra-ades.github.io/Ux-Ui-Hw17/">About</a>
+    <a style="color:#dd5444;">Skills</a>
+    <a class="link" href="https://audra-ades.github.io/Ux-Ui-hw18-mywork/" >Work</a>
+    <a class="popup" onclick="myFunction()"> Contact
+      <span class="popuptext" id="myPopup">
+        <div id="sample">
+        Email: Audraades@gmail.com
+      </div>
+      <br />
+       
+      <button class="copy" onclick="copyText()">Copy</button>
+      <br />
+       
+       
+      <script>
+          function copyText() {
+       
+            
+              navigator.clipboard.writeText
+                  ("Audraades@gmail.com");
+          }
+      </script>
+      
+     
+      </span> 
+      
+    </a>
   </ul>
 
+ 
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
   <section style="text-align:center; border: black solid 5px; margin: 100px;">
-    <h1 class="myskills">Newsflash!!</h1>
+    <h1 class="myskills">Newsflash</h1>
     <p class="skillblurb"> My Skills...</p>
-  <div class="skill1" ><img style="text-align:center;" width="70%"; src="images /stair1.png">
+  <div class="skill1" ><img style="text-align:center;" width="70%"; src="images/tools.gif">
    <h1 tyle="text-align: right;">Tools:
-    <p class="skillp"> Adobe; Lightroom,Photoshop, 
+    <p class="skillp"style="margin: 20px;> Adobe; Lightroom,Photoshop, 
         Illustrator </p>
-    <p class="skillp"> Ux/Ui; 
+    <p class="skill> Ux/Ui; 
         Figma, Miro </p>
-    <p class="skillp"> Coding; 
+    <p class="skillp" style="margin: 20px;"> Coding; 
         Html, Css, Javascript, Github,
         Visualstudio </p>
         <p class="skillp"> Other useful design tools; 
@@ -45,7 +79,7 @@
   </div>
   
   <div class="skill2">
-    <h1 style="text-align: center;">Ux/ Ui specific:
+    <h1 style="text-align: left;">Ux/ Ui specific:
       <p style="align-content:left; align-items:self-start;"class= "skillp2"> Persona Creation,
         User Interviews Planning,
         User Interviews,
@@ -66,14 +100,16 @@
         Storyboarding,
         and UI Design
    </h1>
-   <img id="stair2"; width="70%";  height= "60%" ; src="images /stair2.png" ></p>
+   <img id="stair2"; width="55%";  height= "45%" ; src="images/stair2.png" ></p>
    </div>
 
    
    
-   <div style="text-align: center;"><button class="styled" type="button" >Download Resume</button>
-   </div>
-  
+   <div class="row"><img  src="../images/handpointleft.gif"; width="30%"; class="point1" ><button class="styled" type="button" ><a class="link" href="AudraResume .docx.pdf" download="AudraResume";>Download Resume</a></button>
+   
+    <img src="../images/handpointright.gif"; width="30%"; class="point1">
+ </div>
+
   
 </section>
   
@@ -92,24 +128,25 @@
   <footer>
   
     <ul class="foot">
-      
-      <a >About</a>
-      <a >Skills</a>
-      <a >Work</a>
-      <a >Contact</a>
+        <a class="link" href="https://audra-ades.github.io/Ux-Ui-Hw17/">About</a>
+        <a style="color:#dd5444;">Skills</a>
+        <a class="link" href="https://audra-ades.github.io/Ux-Ui-hw18-mywork/" >Work</a>
+          
+        </a>
     </ul>
   
   
-    <div class="socials" style="border: black solid 5px; height: 100px; margin:50Px">
-      <a> <img width= 10%; 
-        src="images /insta.png"></a>
-      <a> <img width= 10%; 
-          src="images /linked.png"></a>
-       <a> <img width= 10%; 
-            src="images /mail.png"></a>
+    <div class="socials" style="border: black solid 5px; height: 100px; margin:50Px"><img class="red" src="./images/red.PNG">
+      <a class="link" href="https://www.instagram.com/audgeepaudgee/"> <img width= 15%; 
+        src="images/insta.png"></a>
+      <a class="link" href="https://www.linkedin.com/in/audra-ades-418436282/"> <img width= 15%; 
+          src="images/linked.png"></a>
+       <a href="mailto:audraades@gmail.com"> <img width= 15%; 
+            src="images/mail.png"></a>
+       <img class="red2" src="./images/red2.PNG">   
+
     </div>
   </footer>
   
   </html>
-  
   
